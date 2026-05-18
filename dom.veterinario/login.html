@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dom Veterinário</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+<div class="logo">
+<div class="logo-circle">
+<i class="fa-solid fa-paw"></i>
+</div>
+
+<h1>Dom Veterinário</h1>
+<p>Sistema de Gestão Veterinária</p>
+</div>
+
+<form id="loginForm" action="conexao.php" method="post">
+<div class="form-group">
+<label>Usuário</label>
+<div class="input-box">
+<i class="fa-regular fa-user"></i>
+<input type="text" name="usuario" id="usuario" placeholder="Digite seu usuário">
+</div>
+</div>
+
+<div class="form-group">
+<label>Senha</label>
+<div class="input-box">
+<i class="fa-solid fa-lock"></i>
+<input type="password"name="senha" id="senha" placeholder="Digite sua senha">
+</div>
+</div>
+
+<a href="rgatendimento.html"><button type="submit"  >Entrar</button></a>
+</form>
+
+<div class="bottom-text">
+<p>Não tem uma conta? <a href="funcionario.html"> Solicite acesso</a>
+</p>
+</div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

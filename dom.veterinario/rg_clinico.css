@@ -1,0 +1,76 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right,#b3e5fc,#ffffff);
+    margin: 0;
+    padding: 20px;
+}
+
+/* CAIXA PRINCIPAL (MAIS LARGA E MENOS "ALTA") */
+.container{
+    max-width: 600px;   /* aumentei a largura */
+    margin: auto;
+    background: white;
+    padding: 20px;      /* reduzi um pouco o padding */
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    color: #2196f3;
+    margin-bottom: 10px; /* reduz altura visual */
+}
+
+.section-title{
+    margin-top: 15px;   /* menos espaço vertical */
+    color: #1976d2;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 4px;
+}
+
+label{
+    display: block;
+    margin-top: 8px;    /* reduz altura */
+    font-weight: bold;
+    
+}
+
+input,
+textarea,
+select{
+    width: 100%;
+    padding: 8px;       /* inputs mais compactos */
+    margin-top: 4px;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 60px;   /* diminui altura da caixa de texto */
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1e88e5;
+}
+
+.resultado{
+    margin-top: 15px;
+    background-color: #f1f8ff;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #bbdefb;
+}
