@@ -33,7 +33,7 @@ body{
 
 h1{
     text-align: center;
-    color: #38b6ff;
+    color: #00cfef;
     margin-bottom: 8px;
     font-size: 28px;
 }
@@ -64,7 +64,7 @@ form{
 
 label{
     margin-bottom: 6px;
-    color: #38b6ff;
+    color: #00cfef;
     font-weight: bold;
     font-size: 14px;
 }
@@ -87,7 +87,7 @@ textarea{
 
 textarea:focus,
 select:focus{
-    border-color: #38b6ff;
+    border-color: #00cfef;
     box-shadow: 0 0 8px rgba(105,187,255,0.3);
 }
 
@@ -106,7 +106,7 @@ button{
 }
 
 button:hover{
-    background: #4aaeff;
+    background: #00cfef;
     transform: scale(1.02);
 }
 
