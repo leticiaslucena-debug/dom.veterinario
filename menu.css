@@ -59,6 +59,7 @@ body{
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
+    width:300px;
 }
 
 .botoes button:hover{
