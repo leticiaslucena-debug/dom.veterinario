@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pets</title>
+    <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+
+<div class="card">
+
+    <div class="icon">🐾</div>
+
+    <h2>Cadastrar Pet</h2>
+    <p>Cadastro de Animais</p>
+
+    <form action="pet.php" method="POST">
+
+        <div class="input-group">
+            <label>ID do Pet</label>
+            <input type="text" name="id_pet" placeholder="Ex: PET001" required>
+        </div>
+
+        <div class="input-group">
+            <label>Nome</label>
+            <input type="text" name="nome" placeholder="Nome do pet" required>
+        </div>
+
+        <div class="input-group">
+            <label>Espécie</label>
+            <input type="text" name="especie" placeholder="Cachorro, Gato..." required>
+        </div>
+
+        <div class="input-group">
+            <label>Raça</label>
+            <input type="text" name="raca" placeholder="Ex: Labrador">
+        </div>
+
+        <div class="input-group">
+            <label>Sexo</label>
+            <select name="sexo">
+                <option>Macho</option>
+                <option>Fêmea</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Data de nascimento</label>
+            <input type="date" name="nascimento">
+        </div>
+
+        <div class="input-group">
+            <label>Peso</label>
+            <input type="text" name="peso" placeholder="Ex: 12 kg">
+        </div>
+
+        <div class="input-group">
+            <label>Cor</label>
+            <input type="text" name="cor" placeholder="Ex: Caramelo">
+        </div>
+
+        <div class="input-group">
+            <label>Tutor (dono)</label>
+            <input type="text" name="tutor" placeholder="Nome do responsável">
+        </div>
+
+        <div class="input-group">
+            <label>Telefone do tutor</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxx-xxxx">
+        </div>
+<button onclick="window.location.href='Dono.html.html'">
+    Cadastrar Pet
+</button>
+    </form>
+
+</div>
+
+<script src="pet.js"></script>
+
+</body>
+</html>
