@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de atendimento ou serviço realizado</title>
+    <link rel="stylesheet" href="rgatendimento.css">
+    <script src="rgatendimento.js"></script>
+</head>
+<body>
+    
+    <div class="geral">
+        <form action="rgatendimento.php" method="post" id="formrgatedimento" >
+    <h1>Registro de Atendimento </h1>
+    
+<label for="idatendimento"> ID Atendimento</label><br>
+<input type="text" id="idatendimento" name="idatendimento"><br>
+<label for="id_dono"> ID do Dono</label><br>
+<input type="text" id="id_dono" name="id_dono"><br>
+<label for="id_pet">ID do Pet</label><br>
+<input type="text" id="id_pet" name="id_pet"><br>
+<label for="tipo">Tipo de Atendimento</label><br>
+<select name="tipo" id="tipo" required  >
+    <option value="" disabled selected>Selecione o tipo...</option>
+    <option >Consulta</option>
+    <option>Vacina</option>
+    <option>Banho</option>
+    <option>Tosa</option>
+    <option>Cirurgia</option>
+</select><br><br>
+<label for="id_vet">ID Veterinário</label><br>
+<input type="text" id="id_vet" name="id_vet"><br>
+<label for="id_clinico">ID do Registro Clinico</label><br>
+<input type="text" id="id_clinico" name="id_clinico"><br>
+<label for="data">Data</label><br>
+<input type="text" id="data" name="data"><br>
+<label for="status">Status</label><br>
+<select name="status" id="status" required onchange="verificaAgendamento()" >
+    <option value="" disabled selected>Selecione o status...</option>
+    <option value="Agendado">Agendado</option>
+    <option value="Em andamento">Em Andamento</option>
+    <option value="Concluído">Concluído</option>
+    <option value="Cancelado">Cancelado</option>
+</select><br><br>
+<div id="bloco_agendamento" style="display: none;">
+    <label for="data_agendada">Data do Agendamento</label><br>
+    <input type="date" id="data_agendada" name="data_agendada"><br><br>
+</div>
+<br>
+<label for="valor">Valor do Serviço</label><br>
+<input type="number" id="valor" name="valor" step="0.01" required><br>
+<label for="formapg">Forma de Pagamento</label><br>
+<select id="formapg" name="formapg" required onchange="ajustarPagamento()">
+    <option value="" disabled selected>Selecione a forma de pagamento...</option>
+    <option value="Dinheiro">Dinheiro</option>
+    <option value="Cartão">Cartão</option> 
+    <option value="Pix">Pix</option>
+    </select><br><br>
+    <div id="bloco_dinheiro">
+    <label for="valor_pago">Valor  Pago</label><br>
+<input type="number" id="valor_pago" name="valor_pago" oninput="calculartroco()"><br>
+<label for="troco">Troco</label><br>
+<input type="number" id="troco" name="troco" readonly></div>
+<br>
+<div id="bloco_cartao" style="display: none;">
+    <label for="parcelas">Número de Parcelas</label><br>
+    <input type="number" id="parcelas" name="parcelas" min="1" oninput="calcularParcelas()">
+    <br>
+    <label for="valor_parcela">Valor de cada Parcela (R$)</label><br>
+    <input type="text" id="valor_parcela" name="valor_parcela" readonly>
+    <br>
+</div>
+<br>
+<button type="button" onclick="registrar()">Registrar</button> 
+</form>
+
+</div>
+   
+</body>
+</html>
