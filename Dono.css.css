@@ -6,6 +6,7 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #42A5F5, #3FA9F5);
+     background-image: url(OIP.jpg);
 }
 
 .card-cadastro {
