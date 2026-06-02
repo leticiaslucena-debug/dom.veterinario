@@ -21,7 +21,7 @@ VALUES
 ('$nome', '$email', '$usuario', '$senha')";
 
 if($conexao->query($sql) === TRUE){
-echo "Cadastro solicitado com sucesso!";
+echo "<script>alert('Cadastro solicitado com sucesso!'); window.location.href='cadastrofuncionarios.html';</script>";
 }else{
 echo "Erro ao cadastrar: " . $conexao->error;
 }
