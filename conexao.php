@@ -4,7 +4,7 @@ $senha = $_POST['senha'];
 
 if($usuario == "admin" && $senha == "123456"){
 
-    echo "<script>alert('Login realizado com sucesso!'); window.location.href='rgatendimento.html';</script>";
+    echo "<script>alert('Login realizado com sucesso!'); window.location.href='menu.html';</script>";
 
 }else{
 
